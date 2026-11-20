@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>wopLa - Run Details #8492</title>
+<!-- Google Fonts: Inter & JetBrains Mono -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#EEF2FF',
+              100: '#E0E7FF',
+              500: '#3B82F6',
+              600: '#2563EB',
+              700: '#1D4ED8',
+            },
+          },
+        },
+      },
+    };
+  </script>
+<!-- Custom Scrollbar & Utility Styles -->
+<style data-purpose="custom-scrollbars">
+    /* Subtle sleek scrollbars */
+    ::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #E2E8F0;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #CBD5E1;
+    }
+  </style>
+</head>
+<body class="bg-[#F8FAFC] text-slate-800 font-sans antialiased h-screen overflow-hidden flex">
+<!-- BEGIN: Sidebar -->
+<aside class="w-[240px] flex-shrink-0 bg-white border-r border-slate-200 flex flex-col justify-between select-none h-full z-20" data-purpose="app-sidebar">
+<div class="flex flex-col overflow-y-auto">
+<!-- Logo Bar -->
+<div class="h-16 px-4 flex items-center justify-between border-b border-slate-100">
+<div class="flex items-center gap-2">
+<!-- wopLa brand icon -->
+<svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewbox="0 0 24 24">
+<circle cx="18" cy="5" r="3"></circle>
+<circle cx="6" cy="12" r="3"></circle>
+<circle cx="18" cy="19" r="3"></circle>
+<line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line>
+<line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line>
+</svg>
+<span class="text-xl font-bold tracking-tight text-brand-600">wop<span class="text-blue-500 font-black">La</span></span>
+</div>
+<!-- Collapse Sidebar Icon -->
+<button class="p-1 rounded-md text-slate-400 hover:text-slate-600 hover:bg-slate-50 transition" title="Collapse sidebar" type="button">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M4 6h16M4 12h16M4 18h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+</svg>
+</button>
+</div>
+<!-- Team Selector Dropdown Card -->
+<div class="px-3 pt-3">
+<div class="flex items-center justify-between p-2 rounded-lg border border-slate-200 hover:border-slate-300 bg-white cursor-pointer shadow-sm transition">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded bg-zinc-900 flex items-center justify-center text-emerald-400 font-semibold text-xs shadow-inner">
+<span class="tracking-tighter">⚡</span>
+</div>
+<div class="text-left">
+<p class="text-[10px] text-slate-400 font-medium leading-tight">Team</p>
+<p class="text-xs font-semibold text-slate-800 leading-tight">Zendeeps R&amp;D</p>
+</div>
+</div>
+<svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M8 9l4-4 4 4m0 6l-4 4-4-4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+<!-- Main Navigation Menu -->
+<nav aria-label="Sidebar Navigation" class="mt-4 px-2.5 space-y-0.5">
+<!-- Dashboard -->
+<a class="flex items-center gap-3 px-3 py-2 text-xs font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition" href="#">
+<svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+</svg>
+          Dashboard
+        </a>
+<!-- Workflows -->
+<a class="flex items-center gap-3 px-3 py-2 text-xs font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition" href="#">
+<svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+</svg>
+          Workflows
+        </a>
+<!-- Runs (Active) -->
+<a aria-current="page" class="flex items-center gap-3 px-3 py-2 text-xs font-semibold text-brand-600 bg-brand-50 rounded-lg transition" href="#">
+<svg class="w-4 h-4 text-brand-600" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="10" stroke-width="1.8"></circle>
+<polygon fill="currentColor" points="10 8 16 12 10 16 10 8" stroke="none"></polygon>
+</svg>
+          Runs
+        </a>
+<!-- Agents -->
+<a class="flex items-center gap-3 px-3 py-2 text-xs font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition" href="#">
+<svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<rect height="12" rx="2" stroke-width="1.8" width="16" x="4" y="6"></rect>
+<path d="M9 10h.01M15 10h.01M9 14h6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+</svg>
+          Agents
+        </a>
+<!-- Schedules -->
+<a class="flex items-center gap-3 px-3 py-2 text-xs font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition" href="#">
+<svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<rect height="18" rx="2" stroke-width="1.8" width="18" x="3" y="4"></rect>
+<path d="M16 2v4M8 2v4M3 10h18" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+</svg>
+          Schedules
+        </a>
+<!-- Settings -->
+<a class="flex items-center gap-3 px-3 py-2 text-xs font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition" href="#">
+<svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+<circle cx="12" cy="12" r="3" stroke-width="1.8"></circle>
+</svg>
+          Settings
+        </a>
+</nav>
+<!-- PINNED Workspaces / Flows -->
+<div class="mt-6 px-3">
+<div class="flex items-center gap-1.5 text-[11px] font-semibold text-slate-400 tracking-wider uppercase px-2 mb-2">
+<svg class="w-3 h-3 text-slate-400 transform -rotate-45" fill="currentColor" viewbox="0 0 20 20">
+<path d="M10 2a1 1 0 00-.894.553L7.382 6H4a1 1 0 000 2h.618l.894 4.472A2 2 0 007.472 14H9v3a1 1 0 102 0v-3h1.528a2 2 0 001.96-1.528L15.382 8H16a1 1 0 100-2h-3.382l-1.724-3.447A1 1 0 0010 2z"></path>
+</svg>
+<span>Pinned</span>
+</div>
+<div class="space-y-1 text-xs">
+<!-- Collapsible Flows Item -->
+<div>
+<div class="flex items-center justify-between px-2 py-1.5 text-slate-600 font-medium hover:text-slate-900 cursor-pointer">
+<div class="flex items-center gap-2">
+<svg class="w-3 h-3 text-slate-400" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+</svg>
+<span>Flows</span>
+</div>
+</div>
+<!-- Sub items -->
+<div class="ml-5 pl-2 border-l border-slate-100 space-y-1 mt-0.5">
+<a class="block py-1 text-[11px] text-slate-500 hover:text-slate-800 transition" href="#">Project Alpha</a>
+<a class="block py-1 text-[11px] text-slate-500 hover:text-slate-800 transition" href="#">Project Beta</a>
+<a class="block py-1 text-[11px] text-slate-500 hover:text-slate-800 transition" href="#">Project Deploy</a>
+</div>
+</div>
+<div class="flex items-center justify-between px-2 py-1.5 text-slate-600 font-medium hover:text-slate-900 cursor-pointer">
+<div class="flex items-center gap-2">
+<svg class="w-3 h-3 text-slate-400" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+</svg>
+<span>Runs</span>
+</div>
+</div>
+<div class="flex items-center justify-between px-2 py-1.5 text-slate-600 font-medium hover:text-slate-900 cursor-pointer">
+<div class="flex items-center gap-2">
+<svg class="w-3 h-3 text-slate-400" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+</svg>
+<span>Agents</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Sticky Bottom Navigation Elements -->
+<div class="p-3 border-t border-slate-100 space-y-2.5">
+<!-- Ask Miku AI Button -->
+<button class="w-full flex items-center justify-between px-3 py-2 bg-brand-600 hover:bg-brand-700 text-white rounded-lg shadow-sm text-xs font-medium transition group" type="button">
+<div class="flex items-center gap-2">
+<svg class="w-4 h-4 text-blue-200 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span>Ask Miku AI</span>
+</div>
+<span class="w-2 h-2 rounded-full bg-blue-300 ring-2 ring-brand-500"></span>
+</button>
+<!-- User Profile -->
+<div class="flex items-center justify-between p-1.5 rounded-lg hover:bg-slate-50 cursor-pointer transition">
+<div class="flex items-center gap-2.5">
+<img alt="Nurul avatar" class="w-7 h-7 rounded-full object-cover border border-slate-200" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFA0tszCpNXDjGJSO-7QKHc18stXPSTSo1up99oxxHbaBNDMims078uLq-x7OM2tB-FF0Rr2GHRXiwNW5hF3OAl-P5WTFSe50qaMFY-yENGrX9Dl7fQzLEQCdaL3r3n31r0WwtC7gXMx9QpWzeOfzhxFrn4ixTEjLwjQ8e3aH6uQQM9UXI1h6dFlWhhIFMSFJ6CngMk0GFeza_P_LDqtTth-zATX-t6gVcCmC_4uSq"/>
+<div class="text-left">
+<p class="text-xs font-semibold text-slate-800 leading-tight">Nurul's Zone</p>
+<p class="text-[10px] text-slate-400 font-medium leading-tight">Admin Workspace</p>
+</div>
+</div>
+<svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+</aside>
+<!-- END: Sidebar -->
+<!-- BEGIN: Main Viewport Container -->
+<div class="flex-1 flex flex-col h-full overflow-hidden bg-[#F8FAFC]">
+<!-- Top Header Bar -->
+<header class="h-16 px-6 bg-white border-b border-slate-200 flex items-center justify-between flex-shrink-0">
+<!-- Breadcrumbs & Status -->
+<div class="flex items-center gap-2 text-sm">
+<svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<circle cx="18" cy="5" r="3"></circle>
+<circle cx="6" cy="12" r="3"></circle>
+<circle cx="18" cy="19" r="3"></circle>
+<line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line>
+<line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line>
+</svg>
+<span class="text-slate-500 font-medium hover:text-slate-700 cursor-pointer">Run</span>
+<span class="text-slate-300 font-normal">/</span>
+<span class="text-slate-900 font-semibold">Run Details</span>
+</div>
+<!-- Search & Top Actions -->
+<div class="flex items-center gap-3">
+<!-- Search bar -->
+<div class="relative w-72">
+<svg class="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<input class="w-full text-xs pl-9 pr-3 py-1.5 rounded-full border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500 text-slate-700 placeholder-slate-400 transition" placeholder="Search workflows, runs..." type="text"/>
+</div>
+<!-- Notification Bell -->
+<button class="relative p-2 rounded-full text-slate-400 hover:text-slate-600 hover:bg-slate-100 transition" type="button">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="absolute top-1.5 right-1.5 w-1.5 h-1.5 bg-red-500 rounded-full"></span>
+</button>
+<!-- New Workflow CTA -->
+<button class="flex items-center gap-1.5 bg-brand-600 hover:bg-brand-700 text-white text-xs font-semibold px-3 py-1.5 rounded-lg shadow-sm transition" type="button">
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span>New Workflow</span>
+</button>
+</div>
+</header>
+<!-- Main Scrollable Content Area -->
+<main class="flex-1 overflow-y-auto p-6 space-y-6">
+<!-- BEGIN: Run Overview Banner Header -->
+<section class="flex flex-col md:flex-row md:items-center md:justify-between gap-4" data-purpose="run-header">
+<!-- Title & Status Meta -->
+<div>
+<div class="flex items-center gap-3">
+<h1 class="text-xl font-bold text-slate-900 tracking-tight">Run #8492: Data Ingestion Pipeline</h1>
+<!-- Failed Badge -->
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-50 text-red-600 border border-red-200">
+<span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
+              Failed
+            </span>
+</div>
+<div class="flex items-center gap-2 mt-1 text-xs text-slate-500">
+<svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="10" stroke-width="2"></circle>
+<polyline points="12 6 12 12 16 14" stroke-width="2"></polyline>
+</svg>
+<span>Started 14 mins ago</span>
+<span>•</span>
+<span>Duration: 1m 17s</span>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-2.5">
+<button class="flex items-center gap-1.5 px-3 py-1.5 bg-white border border-slate-200 hover:bg-slate-50 text-slate-700 text-xs font-semibold rounded-lg shadow-sm transition" type="button">
+<svg class="w-3.5 h-3.5 text-slate-600" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span>Rerun Failed</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 bg-white border border-slate-200 hover:bg-slate-50 text-slate-700 text-xs font-semibold rounded-lg shadow-sm transition" type="button">
+<svg class="w-3.5 h-3.5 text-slate-600" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span>Artifacts</span>
+</button>
+</div>
+</section>
+<!-- END: Run Overview Banner Header -->
+<!-- BEGIN: Run Content Grid -->
+<div class="grid grid-cols-12 gap-6 items-start pb-6">
+<!-- Column 1: Run Steps Card -->
+<section class="col-span-12 lg:col-span-4 bg-white rounded-xl border border-slate-200 shadow-sm p-4" data-purpose="run-steps-list">
+<!-- Card Header -->
+<div class="flex items-center justify-between pb-3 mb-3 border-b border-slate-100">
+<h2 class="text-sm font-bold text-slate-900">Run Steps</h2>
+<button class="text-slate-400 hover:text-slate-600 p-1" type="button">
+<svg class="w-4 h-4" fill="currentColor" viewbox="0 0 20 20">
+<path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path>
+</svg>
+</button>
+</div>
+<!-- Steps List -->
+<div class="space-y-1.5">
+<!-- Step 1: Pass -->
+<div class="flex items-center justify-between px-2.5 py-2 rounded-lg hover:bg-slate-50 cursor-pointer transition text-xs">
+<div class="flex items-center gap-2.5 truncate">
+<svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="font-medium text-slate-700 truncate">Initialize Environment</span>
+</div>
+<span class="text-slate-400 text-[11px] font-mono ml-2">5s</span>
+</div>
+<!-- Step 2: Pass -->
+<div class="flex items-center justify-between px-2.5 py-2 rounded-lg hover:bg-slate-50 cursor-pointer transition text-xs">
+<div class="flex items-center gap-2.5 truncate">
+<svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="font-medium text-slate-700 truncate">Pull Source Data</span>
+</div>
+<span class="text-slate-400 text-[11px] font-mono ml-2">45s</span>
+</div>
+<!-- Step 3: Pass -->
+<div class="flex items-center justify-between px-2.5 py-2 rounded-lg hover:bg-slate-50 cursor-pointer transition text-xs">
+<div class="flex items-center gap-2.5 truncate">
+<svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="font-medium text-slate-700 truncate">Validate Schema</span>
+</div>
+<span class="text-slate-400 text-[11px] font-mono ml-2">12s</span>
+</div>
+<!-- Step 4: Active / Failed Selection -->
+<div class="flex items-center justify-between px-2.5 py-2 rounded-lg bg-red-50/70 border border-red-200/80 cursor-pointer text-xs transition">
+<div class="flex items-center gap-2.5 truncate">
+<svg class="w-4 h-4 text-red-500 flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="9" stroke-width="2"></circle>
+<path d="M15 9l-6 6m0-6l6 6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="font-semibold text-red-600 truncate">Transform Records</span>
+</div>
+<span class="text-red-500 text-[11px] font-mono font-medium ml-2">15s</span>
+</div>
+<!-- Step 5: Pass -->
+<div class="flex items-center justify-between px-2.5 py-2 rounded-lg hover:bg-slate-50 cursor-pointer transition text-xs">
+<div class="flex items-center gap-2.5 truncate">
+<svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="font-medium text-slate-700 truncate">Check for Duplicates</span>
+</div>
+<span class="text-slate-400 text-[11px] font-mono ml-2">11s</span>
+</div>
+<!-- Step 6: Pass -->
+<div class="flex items-center justify-between px-2.5 py-2 rounded-lg hover:bg-slate-50 cursor-pointer transition text-xs">
+<div class="flex items-center gap-2.5 truncate">
+<svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="font-medium text-slate-700 truncate">Check for Null Values</span>
+</div>
+<span class="text-slate-400 text-[11px] font-mono ml-2">41s</span>
+</div>
+<!-- Step 7: Pass -->
+<div class="flex items-center justify-between px-2.5 py-2 rounded-lg hover:bg-slate-50 cursor-pointer transition text-xs">
+<div class="flex items-center gap-2.5 truncate">
+<svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="font-medium text-slate-700 truncate">Validate Data Types</span>
+</div>
+<span class="text-slate-400 text-[11px] font-mono ml-2">13s</span>
+</div>
+<!-- Step 8: Failed -->
+<div class="flex items-center justify-between px-2.5 py-2 rounded-lg hover:bg-red-50/40 cursor-pointer transition text-xs">
+<div class="flex items-center gap-2.5 truncate">
+<svg class="w-4 h-4 text-red-500 flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="9" stroke-width="2"></circle>
+<path d="M15 9l-6 6m0-6l6 6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="font-medium text-red-600 truncate">Check Against Values</span>
+</div>
+<span class="text-slate-400 text-[11px] font-mono ml-2">23s</span>
+</div>
+<!-- Step 9: Failed -->
+<div class="flex items-center justify-between px-2.5 py-2 rounded-lg hover:bg-red-50/40 cursor-pointer transition text-xs">
+<div class="flex items-center gap-2.5 truncate">
+<svg class="w-4 h-4 text-red-500 flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="9" stroke-width="2"></circle>
+<path d="M15 9l-6 6m0-6l6 6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="font-medium text-red-600 truncate">Validate Foreign Keys</span>
+</div>
+<span class="text-slate-400 text-[11px] font-mono ml-2">19s</span>
+</div>
+<!-- Step 10: Failed -->
+<div class="flex items-center justify-between px-2.5 py-2 rounded-lg hover:bg-red-50/40 cursor-pointer transition text-xs">
+<div class="flex items-center gap-2.5 truncate">
+<svg class="w-4 h-4 text-red-500 flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="9" stroke-width="2"></circle>
+<path d="M15 9l-6 6m0-6l6 6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="font-medium text-red-600 truncate">Check for Characters</span>
+</div>
+<span class="text-slate-400 text-[11px] font-mono ml-2">28s</span>
+</div>
+<!-- Step 11: Pass -->
+<div class="flex items-center justify-between px-2.5 py-2 rounded-lg hover:bg-slate-50 cursor-pointer transition text-xs">
+<div class="flex items-center gap-2.5 truncate">
+<svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="font-medium text-slate-700 truncate">Check Date Formatting</span>
+</div>
+<span class="text-slate-400 text-[11px] font-mono ml-2">16s</span>
+</div>
+<!-- Step 12: Pass -->
+<div class="flex items-center justify-between px-2.5 py-2 rounded-lg hover:bg-slate-50 cursor-pointer transition text-xs">
+<div class="flex items-center gap-2.5 truncate">
+<svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="font-medium text-slate-700 truncate">Check Record Length</span>
+</div>
+<span class="text-slate-400 text-[11px] font-mono ml-2">34s</span>
+</div>
+<!-- Step 13: Pass -->
+<div class="flex items-center justify-between px-2.5 py-2 rounded-lg hover:bg-slate-50 cursor-pointer transition text-xs">
+<div class="flex items-center gap-2.5 truncate">
+<svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="font-medium text-slate-700 truncate">Initialize Environment</span>
+</div>
+<span class="text-slate-400 text-[11px] font-mono ml-2">34s</span>
+</div>
+</div>
+</section>
+<!-- Column 2: Timeline & Execution Logs -->
+<div class="col-span-12 lg:col-span-8 space-y-6">
+<!-- BEGIN: Timeline Card -->
+<section class="bg-white rounded-xl border border-slate-200 shadow-sm p-5" data-purpose="execution-timeline">
+<h2 class="text-sm font-bold text-slate-900 mb-4">Timeline</h2>
+<!-- Gantt Progress Bar Canvas / Tracks -->
+<div class="w-full">
+<!-- Timeline Grid & Segments -->
+<div class="relative w-full h-11 bg-slate-50 rounded-lg border border-slate-100 p-1 flex items-center">
+<!-- Vertical grid indicators -->
+<div class="absolute inset-0 flex justify-between px-4 pointer-events-none opacity-40">
+<span class="border-r border-dashed border-slate-300 h-full"></span>
+<span class="border-r border-dashed border-slate-300 h-full"></span>
+<span class="border-r border-dashed border-slate-300 h-full"></span>
+<span class="border-r border-dashed border-slate-300 h-full"></span>
+<span class="border-r border-dashed border-slate-300 h-full"></span>
+</div>
+<!-- Execution blocks -->
+<div class="relative w-full flex items-center gap-1.5 h-8 z-10 px-1">
+<!-- Segment 1: Init -->
+<div class="h-6 w-[5%] bg-emerald-100 rounded-md border border-emerald-200 flex-shrink-0" title="Initialize Environment: 5s"></div>
+<!-- Segment 2: Pull & Validate -->
+<div class="h-6 w-[62%] bg-emerald-100/90 rounded-md border border-emerald-200 flex-shrink-0" title="Pull &amp; Validate: 57s"></div>
+<!-- Segment 3: Sub-process -->
+<div class="h-6 w-[17%] bg-emerald-100/90 rounded-md border border-emerald-200 flex-shrink-0" title="Secondary Tasks: 15s"></div>
+<!-- Segment 4: Failure point -->
+<div class="h-6 flex-1 bg-red-500 rounded-md border border-red-600 shadow-sm" title="Transform Records (Failed): 15s"></div>
+</div>
+</div>
+<!-- Time Scale Labels -->
+<div class="flex justify-between text-[11px] font-mono text-slate-400 mt-2 px-1">
+<span>0s</span>
+<span>25s</span>
+<span>50s</span>
+<span>75s</span>
+<span>100s</span>
+</div>
+</div>
+</section>
+<!-- END: Timeline Card -->
+<!-- BEGIN: Execution Log Terminal Card -->
+<section class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden flex flex-col" data-purpose="execution-log-viewer">
+<!-- Terminal Header -->
+<div class="px-5 py-3.5 border-b border-slate-100 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="text-xs font-semibold text-slate-800 font-mono">logs / execution.log</span>
+</div>
+<div class="flex items-center gap-4 text-xs">
+<button class="text-slate-500 hover:text-slate-800 font-medium transition" type="button">Clear</button>
+<button class="text-slate-700 hover:text-brand-600 font-medium transition" type="button">Download</button>
+</div>
+</div>
+<!-- Terminal Output Body -->
+<div class="p-5 font-mono text-[12px] leading-[1.8] text-slate-700 overflow-x-auto select-text space-y-1">
+<!-- Log block 1 -->
+<div>
+<span class="text-slate-400">[14:02:15]</span>
+<span class="text-emerald-600 font-semibold mx-1.5">INFO</span>
+<span class="text-slate-800">Initializing engine v2.1.0</span>
+</div>
+<div>
+<span class="text-slate-400">[14:02:16]</span>
+<span class="text-emerald-600 font-semibold mx-1.5">INFO</span>
+<span class="text-slate-800">Schema detected: user_events_v2</span>
+</div>
+<div>
+<span class="text-slate-400">[14:02:18]</span>
+<span class="text-sky-600 font-semibold mx-1.5">DEBUG</span>
+<span class="text-slate-700">Processing batch 1/4 (1024 records)</span>
+</div>
+<div>
+<span class="text-slate-400">[14:02:18]</span>
+<span class="text-sky-600 font-semibold mx-1.5">DEBUG</span>
+<span class="text-slate-700">Tasks starting execution sequence...</span>
+</div>
+<!-- Spacing separator -->
+<div class="h-2"></div>
+<!-- Log block 2 -->
+<div>
+<span class="text-slate-400">[14:02:15]</span>
+<span class="text-emerald-600 font-semibold mx-1.5">INFO</span>
+<span class="text-slate-400 font-normal mr-1">[14:02:15]</span>
+<span class="text-slate-800">Engine initialized: Orion v3.5</span>
+</div>
+<div>
+<span class="text-slate-400">[14:02:16]</span>
+<span class="text-emerald-600 font-semibold mx-1.5">INFO</span>
+<span class="text-slate-800">Detected schema: public.user_profiles</span>
+</div>
+<div>
+<span class="text-slate-400">[14:02:18]</span>
+<span class="text-sky-600 font-semibold mx-1.5">DEBUG</span>
+<span class="text-slate-700">Processing batch 1/8 (2048 records)</span>
+</div>
+<div>
+<span class="text-slate-400">[14:02:18]</span>
+<span class="text-sky-600 font-semibold mx-1.5">DEBUG</span>
+<span class="text-slate-700">Initiating task execution sequence...</span>
+</div>
+<!-- Spacing separator -->
+<div class="h-2"></div>
+<!-- Log block 3 -->
+<div>
+<span class="text-slate-400">[14:02:15]</span>
+<span class="text-emerald-600 font-semibold mx-1.5">INFO</span>
+<span class="text-slate-400 font-normal mr-1">[14:02:15]</span>
+<span class="text-slate-800">Engine initialized: Orion v3.5</span>
+</div>
+<div>
+<span class="text-slate-400">[14:02:16]</span>
+<span class="text-emerald-600 font-semibold mx-1.5">INFO</span>
+<span class="text-slate-800">Detected schema: public.user_profiles</span>
+</div>
+<div>
+<span class="text-slate-400">[14:02:18]</span>
+<span class="text-sky-600 font-semibold mx-1.5">DEBUG</span>
+<span class="text-slate-700">Processing batch 1/8 (2048 records)</span>
+</div>
+<div>
+<span class="text-slate-400">[14:02:18]</span>
+<span class="text-sky-600 font-semibold mx-1.5">DEBUG</span>
+<span class="text-slate-700">Initiating task execution sequence...</span>
+</div>
+<!-- Spacing separator -->
+<div class="h-2"></div>
+<!-- Log block 4 -->
+<div>
+<span class="text-slate-400">[14:02:15]</span>
+<span class="text-emerald-600 font-semibold mx-1.5">INFO</span>
+<span class="text-slate-400 font-normal mr-1">[14:02:15]</span>
+<span class="text-slate-800">Engine initialized: Orion v3.5</span>
+</div>
+<div>
+<span class="text-slate-400">[14:02:16]</span>
+<span class="text-emerald-600 font-semibold mx-1.5">INFO</span>
+<span class="text-slate-800">Detected schema: public.user_profiles</span>
+</div>
+<div>
+<span class="text-slate-400">[14:02:18]</span>
+<span class="text-sky-600 font-semibold mx-1.5">DEBUG</span>
+<span class="text-slate-700">Processing batch 1/8 (2048 records)</span>
+</div>
+<div>
+<span class="text-slate-400">[14:02:18]</span>
+<span class="text-sky-600 font-semibold mx-1.5">DEBUG</span>
+<span class="text-slate-700">Initiating task execution sequence...</span>
+</div>
+</div>
+</section>
+<!-- END: Execution Log Terminal Card -->
+</div>
+</div>
+<!-- END: Run Content Grid -->
+</main>
+</div>
+<!-- END: Main Viewport Container -->
+</body></html>

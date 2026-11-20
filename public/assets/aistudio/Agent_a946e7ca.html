@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"outline-variant":"#c3c6d7","on-error-container":"#93000a","surface-tint":"#0053db","surface-container-high":"#e2e7ff","on-primary-fixed":"#00174b","tertiary-fixed-dim":"#ffb596","surface-container-lowest":"#ffffff","on-tertiary-fixed-variant":"#7d2d00","primary-fixed-dim":"#b4c5ff","surface-dim":"#d2d9f4","on-primary-fixed-variant":"#003ea8","surface-container-low":"#f2f3ff","inverse-on-surface":"#eef0ff","surface-variant":"#dae2fd","on-background":"#131b2e","outline":"#737686","surface-container":"#eaedff","secondary-container":"#d0e1fb","tertiary":"#943700","on-error":"#ffffff","surface-container-highest":"#dae2fd","error-container":"#ffdad6","inverse-surface":"#283044","error":"#ba1a1a","inverse-primary":"#b4c5ff","background":"#faf8ff","tertiary-container":"#bc4800","on-surface":"#131b2e","on-secondary-fixed":"#0b1c30","on-secondary-container":"#54647a","on-primary":"#ffffff","on-primary-container":"#eeefff","primary-container":"#2563eb","on-surface-variant":"#434655","on-secondary":"#ffffff","primary":"#004ac6","surface-bright":"#faf8ff","on-tertiary-fixed":"#360f00","surface":"#faf8ff","on-secondary-fixed-variant":"#38485d","tertiary-fixed":"#ffdbcd","secondary":"#505f76","secondary-fixed-dim":"#b7c8e1","primary-fixed":"#dbe1ff","on-tertiary":"#ffffff","secondary-fixed":"#d3e4fe","on-tertiary-container":"#ffede6"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"gutter":"1rem","space-sm":"0.5rem","margin-mobile":"1rem","space-md":"0.75rem","space-xl":"1.5rem","space-lg":"1rem","margin":"1.5rem","gutter-lg":"1.5rem","space-xs":"0.25rem"},fontFamily:{"headline-lg":["Inter"],"headline-xl":["Inter"],"body-lg":["Inter"],"body-sm":["Inter"],"headline-sm":["Inter"],"code-sm":["JetBrains Mono"],"body-md":["Inter"],"label-sm":["Inter"],"code-md":["JetBrains Mono"]},fontSize:{"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"code-sm":["11px",{"lineHeight":"14px","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"500"}],"code-md":["13px",{"lineHeight":"18px","fontWeight":"400"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="w-60 fixed inset-y-0 left-0 z-30 flex flex-col bg-surface-container-lowest border-r border-outline-variant/30 select-none shadow-[0_1px_8px_rgba(0,0,0,0.02)]"><div class="h-16 px-space-lg flex items-center justify-between border-b border-outline-variant/20"><div class="flex items-center gap-space-sm"><img alt="wopLa Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrCvZ6kCFfUhfmxPnSKjyB4nafPTjUqzxvTeZmZruf5O26Sh5PR_6pisC4vksvSSilIzh9OjSPwQUqh8Ek1XAnVs22o6uQbGblvFMHGYB0M2dMLb2w5lCHKRZ4aU2_NGOTZvzwM5ErlZY5srhhBgzUGPkudrhVCx8ASbUSJ-NdUYk_ckNDV6QMCXGzaDauqoSVqcOJYF5o4P1GkobKMaLNSualcz_51aGi7UOkDMKjneCQ"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-bold">wopLa</span></div><button class="p-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">dock_to_right</span></button></div><div class="px-space-md pt-space-md"><div class="p-space-sm bg-surface-container-low rounded-lg border border-outline-variant/30 flex items-center justify-between cursor-pointer hover:bg-surface-container transition-colors"><div class="flex items-center gap-space-sm min-w-0"><div class="w-6 h-6 rounded bg-primary-fixed flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-[14px] text-on-primary-fixed-variant">hub</span></div><div class="min-w-0"><div class="font-label-sm text-label-sm text-on-surface font-semibold truncate">Zendeeps R&amp;D</div><div class="font-code-sm text-code-sm text-on-surface-variant leading-none truncate">React &amp; .NET Core</div></div></div><span class="material-symbols-outlined text-[18px] text-on-surface-variant">unfold_more</span></div></div><div class="flex-1 overflow-y-auto px-space-md py-space-md space-y-space-xl"><nav class="space-y-space-xs" data-active-classes="bg-surface-container-high text-primary font-semibold"><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="dashboard" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">grid_view</span><span>Dashboard</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="workflows" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">account_tree</span><span>Workflows</span></div><span class="px-1.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-code-sm text-code-sm font-semibold">3</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="runs" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">play_circle</span><span>Runs</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="agents" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">smart_toy</span><span>Agents</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="schedules" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">schedule</span><span>Schedules</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="settings" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">tune</span><span>Settings</span></div></a></nav><div><div class="flex items-center justify-between px-space-md mb-space-xs"><div class="flex items-center gap-space-xs font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold"><span class="material-symbols-outlined text-[14px]">push_pin</span><span>Pinned</span></div><span class="material-symbols-outlined text-[16px] text-outline cursor-pointer">expand_more</span></div><div class="space-y-space-xs font-body-sm text-body-sm"><div class="space-y-0.5"><div class="flex items-center gap-space-xs px-space-md py-1 text-on-surface-variant font-medium cursor-pointer hover:text-on-surface"><span class="material-symbols-outlined text-[14px]">arrow_drop_down</span><span>Flows</span></div><div class="pl-6 space-y-0.5 border-l border-outline-variant/30 ml-4"><a class="block py-1 px-space-xs text-on-surface-variant hover:text-on-surface truncate transition-colors" data-path="workflow-editor" href="#">Project Alpha</a><a class="block py-1 px-space-xs text-on-surface-variant hover:text-on-surface truncate transition-colors" data-path="workflow-editor" href="#">Project Beta</a><a class="block py-1 px-space-xs text-on-surface-variant hover:text-on-surface truncate transition-colors" data-path="workflow-editor" href="#">Project Deploy</a></div></div><div class="flex items-center gap-space-xs px-space-md py-1 text-on-surface-variant font-medium cursor-pointer hover:text-on-surface"><span class="material-symbols-outlined text-[14px]">arrow_right</span><span>Runs</span></div><div class="flex items-center gap-space-xs px-space-md py-1 text-on-surface-variant font-medium cursor-pointer hover:text-on-surface"><span class="material-symbols-outlined text-[14px]">arrow_right</span><span>Agents</span></div></div></div></div><div class="p-space-md border-t border-outline-variant/20 space-y-space-sm bg-surface-container-lowest"><button class="w-full flex items-center justify-between px-space-md py-space-sm bg-primary hover:bg-primary-container text-on-primary rounded-lg shadow-sm transition-all" type="button"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">auto_awesome</span><span class="font-label-sm text-label-sm font-semibold tracking-wide">Ask Miku AI</span></div><span class="h-2 w-2 rounded-full bg-surface-container-lowest animate-pulse"></span></button><div class="pt-space-xs flex items-center justify-between cursor-pointer p-space-xs rounded-lg hover:bg-surface-container-low transition-colors"><div class="flex items-center gap-space-sm min-w-0"><div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold text-label-sm flex-shrink-0">NZ</div><div class="min-w-0"><div class="font-body-sm text-body-sm font-semibold text-on-surface truncate">Nurul's Zone</div><div class="font-code-sm text-code-sm text-on-surface-variant truncate">Admin Workspace</div></div></div><span class="material-symbols-outlined text-[18px] text-on-surface-variant">unfold_more</span></div></div></aside><div class="pl-60"><header class="fixed top-0 left-60 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl border-b border-outline-variant/20 z-20 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><a class="hover:text-on-surface transition-colors" data-path="dashboard" href="#">Dashboard</a><span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span><span class="text-on-surface font-semibold">Overview</span></div><div class="flex items-center gap-space-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-[18px] text-on-surface-variant">search</span><input class="h-9 pl-9 pr-12 w-80 rounded-full border border-outline-variant/50 bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:border-primary-container focus:bg-surface-container-lowest transition-all" placeholder="Search workflows, runs, agents..." type="text"/><span class="absolute right-2.5 px-1.5 py-0.5 rounded border border-outline-variant/40 bg-surface-container-lowest font-code-sm text-code-sm text-on-surface-variant">⌘K</span></div><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-primary ring-2 ring-surface-container-lowest"></span></button><button class="h-9 px-space-md rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold flex items-center gap-1.5 shadow-sm transition-all" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>New Workflow</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="w-full min-h-screen pt-16 bg-background p-space-xl"><div class="flex flex-col w-full">
+<!-- Top Workspace Context & Action Header -->
+<div class="flex flex-col gap-space-lg mb-space-xl">
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm text-primary mb-1">
+<span class="material-symbols-outlined text-[15px]">terminal</span>
+<span class="font-semibold tracking-wide">MICROSOFT AGENT FRAMEWORK (.NET 8)</span>
+<span class="text-outline-variant">•</span>
+<span class="text-on-surface-variant font-normal">SEMANTIC KERNEL v1.14</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Agent Directory &amp; Orchestration</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+          Manage, configure, and monitor Microsoft Agent Framework semantic agents, MCP tool bindings, and execution policies.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="h-9 px-space-md rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1.5 shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[17px] text-on-surface-variant">sync_alt</span>
+<span>Sync Runtime</span>
+</button>
+<button class="h-9 px-space-md rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1.5 shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[17px] text-on-surface-variant">data_object</span>
+<span>Export Schema (.cs)</span>
+</button>
+<button class="h-9 px-space-lg rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold flex items-center gap-1.5 shadow-sm hover:shadow transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Create Agent</span>
+</button>
+</div>
+</div>
+<!-- Filter Pills, Search & Sort Control Strip -->
+<div class="p-space-sm bg-surface-container-lowest rounded-xl shadow-sm flex flex-wrap items-center justify-between gap-space-md">
+<!-- Tabs -->
+<div class="flex items-center gap-1 overflow-x-auto">
+<button class="px-space-md py-1.5 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-semibold flex items-center gap-2 shadow-xs" type="button">
+<span>All Agents</span>
+<span class="px-1.5 py-0.2 rounded-full bg-primary-container text-on-primary font-code-sm text-[10px]">12</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface font-label-sm text-label-sm font-medium flex items-center gap-2 transition-colors" type="button">
+<span>Conversational</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container text-on-surface-variant font-code-sm text-[10px]">4</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface font-label-sm text-label-sm font-medium flex items-center gap-2 transition-colors" type="button">
+<span>Harness Agents</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container text-on-surface-variant font-code-sm text-[10px]">5</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface font-label-sm text-label-sm font-medium flex items-center gap-2 transition-colors" type="button">
+<span>Tool-Calling</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container text-on-surface-variant font-code-sm text-[10px]">3</span>
+</button>
+</div>
+<!-- Search and Sort dropdown -->
+<div class="flex items-center gap-space-sm flex-1 sm:flex-initial justify-end">
+<div class="relative w-full sm:w-64 flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-[17px] text-on-surface-variant">search</span>
+<input class="w-full h-8 pl-8 pr-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:bg-surface-container-lowest focus:outline-none transition-colors" placeholder="Filter agents by name, tag, plugin..." type="text"/>
+</div>
+<div class="h-8 px-space-sm rounded-lg bg-surface-container-low flex items-center gap-1.5 text-on-surface cursor-pointer hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">sort</span>
+<span class="font-body-sm text-body-sm font-medium">Sort: Recently Deployed</span>
+<span class="material-symbols-outlined text-[16px] text-outline">expand_more</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Canvas split view: Agent Cards (Left) & Configuration Slide-Out Panel (Right) -->
+<div class="flex flex-col lg:flex-row gap-space-xl items-start">
+<!-- LEFT SIDE: Responsive Agent Grid -->
+<div class="flex-1 w-full grid grid-cols-1 xl:grid-cols-2 gap-space-lg min-w-0">
+<!-- Card 1: SQL Query Planner (Selected State) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between relative overflow-hidden bg-gradient-to-b from-primary/5 via-transparent to-transparent">
+<div class="absolute top-0 left-0 right-0 h-1 bg-primary"></div>
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-3">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-[22px]">database</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">SQL Query Planner</h3>
+<span class="px-1.5 py-0.5 rounded bg-primary-fixed font-code-sm text-[10px] font-semibold text-on-primary-fixed-variant">ACTIVE</span>
+</div>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+<span class="font-code-sm text-code-sm text-on-surface-variant font-medium">Online • .NET 8 Host</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" title="Quick Test Run" type="button">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md line-clamp-2">
+            Translates natural language to optimized SQL queries against SQL Server &amp; Postgres read-replicas with tenant isolation.
+          </p>
+<!-- Model & Runtime Tags -->
+<div class="space-y-1.5 mb-space-md bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm">
+<span class="flex items-center gap-1 text-on-surface font-medium">
+<span class="material-symbols-outlined text-[14px] text-primary">cloud</span> Azure OpenAI
+              </span>
+<span class="text-on-surface font-semibold">gpt-4o (2024-08-06)</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm">
+<span class="text-outline">Runtime Engine</span>
+<span>SemanticKernel v1.14</span>
+</div>
+</div>
+<!-- Feature Chips -->
+<div class="flex flex-wrap gap-1.5 mb-space-lg">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-code-sm text-code-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">extension</span> 5 Tools • 2 MCP
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-code-sm text-code-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">memory</span> Qdrant Cache
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-code-sm text-code-sm">
+              ~180ms p50
+            </span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-sm bg-surface-container-lowest">
+<span class="font-code-sm text-code-sm text-outline">ID: agt_sql_08a</span>
+<div class="flex items-center gap-space-xs">
+<button class="h-8 px-space-md rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-xs" type="button">
+<span class="material-symbols-outlined text-[15px]">tune</span>
+<span>Configuring</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 2: Schema Validator Agent -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-3">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">verified_user</span>
+</div>
+<div class="min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate group-hover:text-primary transition-colors">Schema Validator Agent</h3>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+<span class="font-code-sm text-code-sm text-on-surface-variant font-medium">Online • .NET Framework</span>
+</div>
+</div>
+</div>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md line-clamp-2">
+            Validates JSON schema, foreign key integrity, and type contracts across streaming payload ingest pipes.
+          </p>
+<div class="space-y-1.5 mb-space-md bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm">
+<span class="flex items-center gap-1 text-on-surface font-medium">
+<span class="material-symbols-outlined text-[14px] text-tertiary">neurology</span> Anthropic Bedrock
+              </span>
+<span class="text-on-surface font-semibold">Claude 3.5 Sonnet</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm">
+<span class="text-outline">Runtime Engine</span>
+<span>Microsoft Agent Core</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 mb-space-lg">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-code-sm text-code-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-on-surface-variant">extension</span> 3 Tools • 1 MCP
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-code-sm text-code-sm">
+              Short-term Session
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-code-sm text-code-sm">
+              99.8% Pass
+            </span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-sm bg-surface-container-lowest">
+<span class="font-code-sm text-code-sm text-outline">ID: agt_sch_33c</span>
+<button class="h-8 px-space-md rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px]">tune</span>
+<span>Configure</span>
+</button>
+</div>
+</div>
+<!-- Card 3: Miku Support Assistant -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-3">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">auto_awesome</span>
+</div>
+<div class="min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate group-hover:text-primary transition-colors">Miku Support Assistant</h3>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="h-2 w-2 rounded-full bg-amber-400"></span>
+<span class="font-code-sm text-code-sm text-on-surface-variant font-medium">Idle • Listening</span>
+</div>
+</div>
+</div>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md line-clamp-2">
+            Autonomous developer companion providing code suggestions, log triage, and incident remediation steps.
+          </p>
+<div class="space-y-1.5 mb-space-md bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm">
+<span class="flex items-center gap-1 text-on-surface font-medium">
+<span class="material-symbols-outlined text-[14px] text-primary">cloud</span> Azure OpenAI
+              </span>
+<span class="text-on-surface font-semibold">gpt-4o-mini</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm">
+<span class="text-outline">Runtime Engine</span>
+<span>SemanticKernel v1.14</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 mb-space-lg">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-code-sm text-code-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-on-surface-variant">extension</span> 8 Tools • 3 MCP
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-code-sm text-code-sm">
+              Vector Graph
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-code-sm text-code-sm">
+              ~450ms p50
+            </span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-sm bg-surface-container-lowest">
+<span class="font-code-sm text-code-sm text-outline">ID: agt_miku_01x</span>
+<button class="h-8 px-space-md rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px]">tune</span>
+<span>Configure</span>
+</button>
+</div>
+</div>
+<!-- Card 4: Anomaly Detection Agent -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-3">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">ssid_chart</span>
+</div>
+<div class="min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate group-hover:text-primary transition-colors">Anomaly Detection Agent</h3>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+<span class="font-code-sm text-code-sm text-on-surface-variant font-medium">Online • Local ONNX</span>
+</div>
+</div>
+</div>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md line-clamp-2">
+            Monitors metric drift and execution latency spikes using statistical regression kernels in near real-time.
+          </p>
+<div class="space-y-1.5 mb-space-md bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm">
+<span class="flex items-center gap-1 text-on-surface font-medium">
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">memory</span> Ollama Self-Host
+              </span>
+<span class="text-on-surface font-semibold">Llama 3.3 70B</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm">
+<span class="text-outline">Runtime Engine</span>
+<span>.NET Native / ONNX</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 mb-space-lg">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-code-sm text-code-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-on-surface-variant">extension</span> 2 Tools • 0 MCP
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-code-sm text-code-sm">
+              Sliding Window (10m)
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-code-sm text-code-sm font-semibold">
+              ~42ms ultra-low
+            </span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-sm bg-surface-container-lowest">
+<span class="font-code-sm text-code-sm text-outline">ID: agt_anom_99f</span>
+<button class="h-8 px-space-md rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px]">tune</span>
+<span>Configure</span>
+</button>
+</div>
+</div>
+<!-- Card 5: Document Parser & OCR Agent -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-3">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-slate-100 text-slate-700 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">document_scanner</span>
+</div>
+<div class="min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate group-hover:text-primary transition-colors">Document Parser &amp; OCR Agent</h3>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+<span class="font-code-sm text-code-sm text-on-surface-variant font-medium">Online • SK .NET</span>
+</div>
+</div>
+</div>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md line-clamp-2">
+            Extracts key-value entities, complex tables, and unstructured invoice headers into strongly typed C# records.
+          </p>
+<div class="space-y-1.5 mb-space-md bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm">
+<span class="flex items-center gap-1 text-on-surface font-medium">
+<span class="material-symbols-outlined text-[14px] text-primary">cloud</span> Azure OpenAI
+              </span>
+<span class="text-on-surface font-semibold">gpt-4o</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm">
+<span class="text-outline">Runtime Engine</span>
+<span>Semantic Kernel .NET</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 mb-space-lg">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-code-sm text-code-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-on-surface-variant">extension</span> 4 Tools • 2 MCP
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-code-sm text-code-sm">
+              Ephemeral Buffer
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-code-sm text-code-sm">
+              98.4% Acc
+            </span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-sm bg-surface-container-lowest">
+<span class="font-code-sm text-code-sm text-outline">ID: agt_ocr_47b</span>
+<button class="h-8 px-space-md rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px]">tune</span>
+<span>Configure</span>
+</button>
+</div>
+</div>
+<!-- Card 6: Orchestrator Dispatcher -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-3">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">account_tree</span>
+</div>
+<div class="min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate group-hover:text-primary transition-colors">Orchestrator Dispatcher</h3>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+<span class="font-code-sm text-code-sm text-on-surface-variant font-medium">Online • Multi-Agent Handoff</span>
+</div>
+</div>
+</div>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md line-clamp-2">
+            Coordinates multi-agent handoffs, state rollbacks, and task scheduling across distributed worker nodes.
+          </p>
+<div class="space-y-1.5 mb-space-md bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm">
+<span class="flex items-center gap-1 text-on-surface font-medium">
+<span class="material-symbols-outlined text-[14px] text-primary">cloud</span> Azure OpenAI
+              </span>
+<span class="text-on-surface font-semibold">o1-mini (Reasoning)</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm">
+<span class="text-outline">Runtime Engine</span>
+<span>Microsoft Agent Core</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 mb-space-lg">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-code-sm text-code-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-on-surface-variant">extension</span> 6 Tools • 4 MCP
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-code-sm text-code-sm">
+              Distributed Redis
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-code-sm text-code-sm font-semibold">
+              140 rps
+            </span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-sm bg-surface-container-lowest">
+<span class="font-code-sm text-code-sm text-outline">ID: agt_orch_11z</span>
+<button class="h-8 px-space-md rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px]">tune</span>
+<span>Configure</span>
+</button>
+</div>
+</div>
+</div>
+<!-- RIGHT SIDE: Slide-out High-Fidelity Configuration Drawer -->
+<div class="w-full lg:w-[440px] flex-shrink-0 bg-surface-container-lowest rounded-xl shadow-lg flex flex-col sticky top-20 overflow-hidden">
+<!-- Drawer Header -->
+<div class="p-space-lg bg-surface-container-low/70 flex items-start justify-between">
+<div class="min-w-0">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">SQL Query Planner</h2>
+<span class="px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-800 font-code-sm text-[10px] font-semibold">v2.4.1</span>
+</div>
+<div class="font-code-sm text-code-sm text-on-surface-variant mt-0.5 flex items-center gap-2">
+<span>Microsoft.SemanticKernel</span>
+<span class="text-outline-variant">•</span>
+<span class="text-emerald-600 font-medium">Production Live</span>
+</div>
+</div>
+<button class="p-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Action Sub-header -->
+<div class="px-space-lg py-2.5 bg-surface-container-lowest flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<button class="h-8 px-space-md rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[16px]">save</span>
+<span>Save Changes</span>
+</button>
+<button class="h-8 px-space-md rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm font-medium flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">play_arrow</span>
+<span>Playground</span>
+</button>
+</div>
+<span class="font-code-sm text-[11px] text-outline">Modified 12m ago</span>
+</div>
+<!-- Drawer Tabs -->
+<div class="flex items-center px-space-lg bg-surface-container-low/40">
+<button class="py-2.5 px-3 font-label-sm text-label-sm font-semibold text-primary border-b-2 border-primary" type="button">Configuration</button>
+<button class="py-2.5 px-3 font-label-sm text-label-sm font-medium text-on-surface-variant hover:text-on-surface transition-colors" type="button">Permissions &amp; HITL</button>
+<button class="py-2.5 px-3 font-label-sm text-label-sm font-medium text-on-surface-variant hover:text-on-surface transition-colors" type="button">Execution Logs</button>
+<button class="py-2.5 px-3 font-label-sm text-label-sm font-medium text-on-surface-variant hover:text-on-surface transition-colors" type="button">Versions</button>
+</div>
+<!-- Scrollable Form Body -->
+<div class="p-space-lg space-y-space-xl max-h-[calc(100vh-230px)] overflow-y-auto">
+<!-- 1. Metadata & System Prompt -->
+<section class="space-y-space-md">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">description</span>
+              Agent Persona &amp; Prompt
+            </label>
+<span class="font-code-sm text-code-sm text-outline">C# Kernel Function</span>
+</div>
+<div class="space-y-space-xs">
+<label class="font-body-sm text-body-sm text-on-surface-variant font-medium">Agent Name</label>
+<input class="w-full h-9 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary focus:outline-none transition-all" type="text" value="SQL Query Planner"/>
+</div>
+<div class="space-y-space-xs">
+<label class="font-body-sm text-body-sm text-on-surface-variant font-medium">Role Description</label>
+<input class="w-full h-9 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary focus:outline-none transition-all" type="text" value="Translates natural language to optimized SQL queries against SQL Server &amp; Postgres read-replicas."/>
+</div>
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-body-sm text-body-sm text-on-surface-variant font-medium">System Instructions (Prompt)</label>
+<span class="font-code-sm text-[10px] text-primary bg-primary-fixed px-1.5 py-0.5 rounded font-semibold">284 tokens • 4.2% context</span>
+</div>
+<textarea class="w-full p-2.5 rounded-lg bg-surface-container-low text-on-surface font-code-sm text-code-sm focus:bg-surface-container-lowest focus:ring-1 focus:ring-primary focus:outline-none transition-all leading-relaxed resize-none" rows="4">You are an expert .NET data engineer specializing in SQL Server and PostgreSQL query optimization. Generate performant parameterized queries. Always enforce tenant boundary checks and validate CTE depth limits before emission.</textarea>
+</div>
+</section>
+<!-- 2. Model & Inference Settings -->
+<section class="space-y-space-md pt-space-md bg-surface-container-lowest">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">tune</span>
+            Model &amp; Inference Settings
+          </label>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="space-y-space-xs">
+<label class="font-body-sm text-body-sm text-on-surface-variant">LLM Provider</label>
+<div class="h-9 px-2.5 rounded-lg bg-surface-container-low flex items-center justify-between text-on-surface text-body-sm cursor-pointer hover:bg-surface-container transition-colors">
+<span class="truncate">Azure OpenAI</span>
+<span class="material-symbols-outlined text-[16px] text-outline">expand_more</span>
+</div>
+</div>
+<div class="space-y-space-xs">
+<label class="font-body-sm text-body-sm text-on-surface-variant">Deployment</label>
+<div class="h-9 px-2.5 rounded-lg bg-surface-container-low flex items-center justify-between text-on-surface text-body-sm cursor-pointer hover:bg-surface-container transition-colors">
+<span class="font-code-sm text-code-sm truncate">gpt-4o</span>
+<span class="material-symbols-outlined text-[16px] text-outline">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Slider: Temperature -->
+<div class="space-y-1.5 bg-surface-container-low p-2.5 rounded-lg">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Temperature (Deterministic)</span>
+<span class="font-code-sm text-code-sm font-semibold text-primary">0.10</span>
+</div>
+<input class="w-full accent-primary h-1.5 bg-surface-container rounded-lg cursor-pointer" max="1" min="0" step="0.05" type="range" value="0.10"/>
+<div class="flex justify-between text-[10px] text-outline font-code-sm">
+<span>Precise / Code (0.0)</span>
+<span>Creative (1.0)</span>
+</div>
+</div>
+<!-- Numerical inputs -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="space-y-space-xs">
+<label class="font-body-sm text-body-sm text-on-surface-variant">Max Response Tokens</label>
+<input class="w-full h-8 px-2.5 rounded-lg bg-surface-container-low text-on-surface font-code-sm text-code-sm focus:outline-none" type="number" value="2048"/>
+</div>
+<div class="space-y-space-xs">
+<label class="font-body-sm text-body-sm text-on-surface-variant">Top P</label>
+<input class="w-full h-8 px-2.5 rounded-lg bg-surface-container-low text-on-surface font-code-sm text-code-sm focus:outline-none" step="0.05" type="number" value="0.95"/>
+</div>
+</div>
+</section>
+<!-- 3. Connected .NET Plugins & Tools (Native C# & MCP) -->
+<section class="space-y-space-md pt-space-md bg-surface-container-lowest">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">hub</span>
+              Active Plugins &amp; MCP Servers
+            </label>
+<span class="font-code-sm text-[10px] text-outline">4 Bound</span>
+</div>
+<div class="space-y-1.5">
+<!-- Tool Item 1 -->
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2 min-w-0">
+<input checked="" class="w-4 h-4 rounded text-primary accent-primary" type="checkbox"/>
+<div class="min-w-0">
+<div class="font-code-sm text-code-sm text-on-surface font-semibold truncate">SqlSchemaInspectorPlugin</div>
+<div class="font-body-sm text-[11px] text-outline truncate">.NET Native Reflection Plugin</div>
+</div>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-800 font-code-sm text-[10px] font-semibold">Active</span>
+</div>
+<!-- Tool Item 2 -->
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2 min-w-0">
+<input checked="" class="w-4 h-4 rounded text-primary accent-primary" type="checkbox"/>
+<div class="min-w-0">
+<div class="font-code-sm text-code-sm text-on-surface font-semibold truncate">PostgresQueryRunnerPlugin</div>
+<div class="font-body-sm text-[11px] text-outline truncate">Npgsql Managed Driver (Read-Only)</div>
+</div>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-800 font-code-sm text-[10px] font-semibold">Active</span>
+</div>
+<!-- Tool Item 3: MCP Connection -->
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2 min-w-0">
+<input checked="" class="w-4 h-4 rounded text-primary accent-primary" type="checkbox"/>
+<div class="min-w-0">
+<div class="font-code-sm text-code-sm text-on-surface font-semibold truncate flex items-center gap-1">
+<span>EnterpriseDataCatalogMCP</span>
+<span class="material-symbols-outlined text-[13px] text-primary">link</span>
+</div>
+<div class="font-body-sm text-[11px] text-outline truncate">MCP Server: mcp-gateway:8080 (stdio)</div>
+</div>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-blue-100 text-primary font-code-sm text-[10px] font-semibold">Connected</span>
+</div>
+<!-- Tool Item 4 -->
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2 min-w-0">
+<input checked="" class="w-4 h-4 rounded text-primary accent-primary" type="checkbox"/>
+<div class="min-w-0">
+<div class="font-code-sm text-code-sm text-on-surface font-semibold truncate">ExplainAnalyzeParser</div>
+<div class="font-body-sm text-[11px] text-outline truncate">.NET Kernel Diagnostic Tool</div>
+</div>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-800 font-code-sm text-[10px] font-semibold">Active</span>
+</div>
+<!-- Tool Item 5 (Disabled) -->
+<div class="p-2.5 rounded-lg bg-surface-container-low/50 flex items-center justify-between gap-space-sm opacity-60">
+<div class="flex items-center gap-2 min-w-0">
+<input class="w-4 h-4 rounded text-primary accent-primary" type="checkbox"/>
+<div class="min-w-0">
+<div class="font-code-sm text-code-sm text-on-surface font-semibold truncate">DirectWriteExecutePlugin</div>
+<div class="font-body-sm text-[11px] text-outline truncate">Dangerous mutation permissions</div>
+</div>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-outline font-code-sm text-[10px]">Disabled</span>
+</div>
+</div>
+<button class="w-full py-2 px-3 rounded-lg border border-dashed border-outline-variant hover:border-primary text-primary font-label-sm text-label-sm font-semibold flex items-center justify-center gap-1.5 bg-surface-container-low/40 hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Add Plugin / Connect MCP Gateway</span>
+</button>
+</section>
+<!-- 4. Human-in-the-Loop & Governance -->
+<section class="space-y-space-md pt-space-md bg-surface-container-lowest">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">policy</span>
+            HITL Governance &amp; Safeguards
+          </label>
+<div class="space-y-space-sm">
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="min-w-0 pr-2">
+<div class="font-body-sm text-body-sm text-on-surface font-medium">Require Approval on DDL Statements</div>
+<div class="font-body-sm text-[11px] text-outline">Blocks DROP, ALTER, TRUNCATE queries until approved.</div>
+</div>
+<div class="w-9 h-5 bg-emerald-600 rounded-full flex items-center justify-end p-0.5 cursor-pointer">
+<div class="w-4 h-4 rounded-full bg-white shadow-xs"></div>
+</div>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="min-w-0 pr-2">
+<div class="font-body-sm text-body-sm text-on-surface font-medium">Log Full Query AST to Audit Trail</div>
+<div class="font-body-sm text-[11px] text-outline">Sends serialized execution trees to Splunk / OpenTelemetry.</div>
+</div>
+<div class="w-9 h-5 bg-emerald-600 rounded-full flex items-center justify-end p-0.5 cursor-pointer">
+<div class="w-4 h-4 rounded-full bg-white shadow-xs"></div>
+</div>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low">
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Max Execution Timeout</span>
+<div class="flex items-center gap-1 font-code-sm text-code-sm text-on-surface font-semibold">
+<input class="w-12 text-center bg-surface-container-lowest rounded py-0.5 border border-outline-variant/40" type="text" value="45s"/>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Drawer Footer Actions -->
+<div class="p-space-md bg-surface-container-lowest flex items-center justify-between">
+<button class="text-error hover:bg-error-container p-2 rounded-lg font-label-sm text-label-sm font-semibold flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+<span>Unregister Agent</span>
+</button>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high font-label-sm text-label-sm font-medium transition-colors" type="button">
+            Discard
+          </button>
+<button class="px-space-lg py-1.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold shadow-sm transition-all" type="button">
+            Apply Config
+          </button>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

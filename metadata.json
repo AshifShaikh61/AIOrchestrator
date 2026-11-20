@@ -1,0 +1,6 @@
+{
+  "name": "wopLa AI Orchestrator",
+  "description": "Enterprise AI Orchestrator platform for designing, configuring, executing, and monitoring multi-agent workflows.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
